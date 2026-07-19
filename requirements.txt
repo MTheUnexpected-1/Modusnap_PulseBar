@@ -1,0 +1,10 @@
+psutil>=5.9
+# NVIDIA GPUs:
+pynvml>=11.5; sys_platform != "darwin"
+# AMD on Windows (optional, falls back to WMI without it):
+pyadl; sys_platform == "win32"
+# AMD on Windows WMI fallback:
+WMI; sys_platform == "win32"
+# AMD on Linux: uses the rocm-smi CLI shipped with ROCm, no pip package needed.
+# Apple Silicon: uses powermetrics CLI (built into macOS), no pip package needed.
+# Intel discrete GPU util (optional): install intel-gpu-tools system package for intel_gpu_top.
