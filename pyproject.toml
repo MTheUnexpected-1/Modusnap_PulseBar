@@ -1,8 +1,10 @@
 [project]
 name = "modusnap-pulsebar"
-version = "1.0.0"
+version = "1.0.1"
 description = "Universal live hardware and generation monitoring bar for ComfyUI."
 requires-python = ">=3.10"
+license = { text = "MIT License" }
+
 dependencies = [
     "psutil>=5.9",
     "pynvml>=11.5; sys_platform != 'darwin'",
@@ -11,13 +13,7 @@ dependencies = [
 ]
 
 classifiers = [
-    "Operating System :: Microsoft :: Windows",
-    "Operating System :: POSIX :: Linux",
-    "Operating System :: MacOS",
-    "Environment :: GPU :: NVIDIA CUDA",
-    "Environment :: GPU :: AMD ROCm",
-    "Environment :: GPU :: Intel Arc",
-    "Environment :: GPU :: Apple Metal"
+    "Operating System :: OS Independent"
 ]
 
 [project.urls]
@@ -26,5 +22,5 @@ Documentation = "https://github.com/MTheUnexpected-1/Modusnap_PulseBar#readme"
 "Bug Tracker" = "https://github.com/MTheUnexpected-1/Modusnap_PulseBar/issues"
 
 [tool.comfy]
-PublisherId = "MTheUnexpected-1"
+PublisherId = "mtheunexpected"
 DisplayName = "ModuSnap PulseBar"
